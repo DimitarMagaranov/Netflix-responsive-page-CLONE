@@ -3,7 +3,8 @@
     top: 0px;
     left: 0px;
     width: 100%;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
+    z-index: 1000;
 
     display: flex;
     justify-content: space-between;

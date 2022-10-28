@@ -1,0 +1,15 @@
+.input-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-wrapper .input {
+    width: 100%;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    box-shadow: var(--shadow-md);
+}

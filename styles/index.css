@@ -1,6 +1,8 @@
 @import './reset.css';
 @import './header.css';
 @import './components/button.css';
+@import './components/input.css';
+@import './hero-section.css';
 
 :root {
     --clr-black: hwb(0 0% 100%);
