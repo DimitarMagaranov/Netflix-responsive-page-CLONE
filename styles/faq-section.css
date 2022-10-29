@@ -13,6 +13,8 @@
 }
 
 #faq .questions .question{
+    max-width: 42rem;
+    margin: 0 auto;
     background-color: var(--clr-grey);
     padding: 0.5rem 1rem;
 }
@@ -49,10 +51,13 @@
 #faq .subscription {
     text-align: center;
     padding: 0px var(--p-x);
+    max-width: 42rem;
+    margin: 0 auto;
 } 
 
 #faq .subscription .title {
     font-weight: 500;
-    margin-bottom: 1rem;
+    margin: 0px auto 1rem auto;
     font-size: 1rem;
+    max-width: 560px;
 } 

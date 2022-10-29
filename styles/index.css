@@ -6,12 +6,14 @@
 @import './hero-section.css';
 @import './section-type-feature.css';
 @import './faq-section.css';
+@import './footer.css';
 
 :root {
     --clr-black: hwb(0 0% 100%);
     --clr-white: #fff;
     --clr-primary: #e30813;
     --clr-grey: #222;
+    --clr-footer-text: #a3a3a3;
 
     --p-x: 1rem;
     --p-y: 2rem;
@@ -25,4 +27,32 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--clr-black);
     color: var(--clr-white);
+}
+
+@media screen and (min-width:768px) {
+    :root {
+        --p-x: 2rem;
+        --p-y: 4rem;
+    }
+
+    /* html {
+        font-size: 22px; 
+    } */
+}
+
+@media screen and (min-width:1024px) {
+    html {
+        font-size: 22px; 
+    }
+}
+
+@media screen and (min-width:1440px) {
+    :root {
+        --p-x: 3rem;
+        --p-y: 5rem;
+    }
+
+    html {
+        font-size: 26px; 
+    }
 }

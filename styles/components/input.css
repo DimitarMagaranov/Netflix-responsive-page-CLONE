@@ -1,15 +1,62 @@
 .input-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 0.5rem;
-    justify-content: center;
-    align-items: center;
+  --btn-width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-wrapper .btn {
+  width: var(--btn-width);
 }
 
 .input-wrapper .input {
-    width: 100%;
-    border: none;
-    padding: 0.5rem 0.75rem;
-    border-radius: 0.25rem;
-    box-shadow: var(--shadow-md);
+  width: 100%;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  box-shadow: var(--shadow-md);
+}
+
+@media screen and (min-width: 640px) {
+  .input-wrapper {
+    --btn-width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+    flex-wrap: nowrap;
+    row-gap: unset;
+    justify-content: start;
+    align-items: stretch;
+  }
+
+  .input-wrapper .input {
+    width: calc(100% - var(--btn-width));
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .input-wrapper .btn {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .input-wrapper .btn:hover {
+    transform: unset;
+    bottom: unset;
+    box-shadow: unset;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .input-wrapper {
+    --btn-width: 180px;
+    width: 600px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .input-wrapper {
+    --btn-width: 240px;
+    width: 720px;
+  }
 }
